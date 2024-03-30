@@ -1,12 +1,12 @@
 [package]
-name = "advmac"
-version = "1.0.3"
+name = "krata-advmac"
+version = "1.1.0"
 edition = "2021"
 rust-version = "1.64"
 license = "MIT"
 description = "Advanced MAC address crate"
 categories = ["os", "network-programming"]
-repository = "https://github.com/GamePad64/advmac"
+repository = "https://github.com/edera-dev/advmac"
 keywords = ["network", "mac", "macaddr", "eui-48", "eui-64"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -31,3 +31,6 @@ serde = ["dep:serde", "arrayvec/serde"]
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "advmac"
